@@ -1,3 +1,10 @@
+---
+title: Steamatic | Twin Cities
+
+show_email: true
+show_locations: true
+---
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
@@ -30,7 +37,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Steamatic | Twin Cities</title>
+	<title class="editable">{{ page.title }}</title>
 
 </head>
 
@@ -67,20 +74,21 @@
 
 					<!-- Top Links
 					============================================= -->
-					<div class="top-links">
-						<ul>
-							<li><a href="index.html">Locations</a>
-								<ul>
-									<li><a href="#">San Francisco</a></li>
-									<li><a href="#">London</a></li>
-									<li><a href="#">Amsterdam</a></li>
-								</ul>
-							</li>
-							<li><a href="faqs.html">FAQs</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div><!-- .top-links end -->
-
+					{% if page.show_locations %}
+    					<div class="top-links editable">
+    						<ul>
+    							<li><a href="index.html">Locations</a>
+    								<ul class="editable">
+    									<li><a href="#">San Francisco</a></li>
+    									<li><a href="#">London</a></li>
+    									<li><a href="#">Amsterdam</a></li>
+    								</ul>
+    							</li>
+    							<li><a href="faqs.html">FAQs</a></li>
+    							<li><a href="contact.html">Contact</a></li>
+    						</ul>
+    					</div><!-- .top-links end -->
+                    {% endif %}
 				</div>
 
 			</div>
@@ -108,13 +116,15 @@
 							<span class="editable">(612) 000-0000</span>
 						</div>
 					</li>
-					<li>
-						<i class="i-plain icon-envelope-alt nomargin"></i>
-						<div class="he-text">
-							Email Us
-							<span class="editable">info@test.com</span>
-						</div>
-					</li>
+					{% if page.show_email %}
+    					<li>
+    						<i class="i-plain icon-envelope-alt nomargin"></i>
+    						<div class="he-text">
+    							Email Us
+    							<span class="editable">info@test.com</span>
+    						</div>
+    					</li>
+					{% endif %} 
 					<li>
 						<i class="i-plain icon-map-marker2 nomargin"></i>
 						<div class="he-text">
