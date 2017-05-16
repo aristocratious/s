@@ -234,14 +234,14 @@
 								<div class="col-md-12 bottommargin-sm">
 									<div class="footer-big-contacts">
 										<span>Call Us 24/7:</span>
-										(612) 000-0000
+										{{ site.phone }}
 									</div>
 								</div>
 
 								<div class="col-md-12 bottommargin-sm">
 									<div class="footer-big-contacts">
 										<span>Send an Email:</span>
-										email@steamatic.com
+										{{ site.email }}
 									</div>
 								</div>
 
@@ -257,10 +257,10 @@
 										<i class="icon-facebook"></i>
 										<i class="icon-facebook"></i>
 									</a>
-									<a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
+									<a href="{{ facebookURL }}"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
 								</div>
 								<div class="col-md-6 clearfix">
-									<a href="#" class="social-icon si-dark si-colored si-gplus nobottommargin" style="margin-right: 10px;">
+									<a href="{{ googleplusURL }}" class="social-icon si-dark si-colored si-gplus nobottommargin" style="margin-right: 10px;">
 										<i class="icon-gplus"></i>
 										<i class="icon-gplus"></i>
 									</a>
@@ -283,7 +283,7 @@
 				<div class="container clearfix">
 
 					<div class="col_half">
-						Copyrights &copy; 2017 All Rights Reserved by Steamatic Twin Cities.<br>
+						Copyrights &copy; {{ site.time | date: '%y' }} All Rights Reserved by {{ site.copyrightname }}.<br>
 						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
 					</div>
 
