@@ -1,8 +1,8 @@
-url: steamatic.com
-phone: 612-655-9550
-email: test@steamatic.com
-servingarea: Twin Cities, MN
-copyrightname: Steamatic Twin Cities
+url: 'steamatic.com'
+phone: '612-655-9550'
+email: 'test@steamatic.com'
+servingarea: 'Twin Cities, MN'
+copyrightname: 'Steamatic Twin Cities'
 facebookURL: 'https://www.facebook.com/pages/Steamatic-TC/618312091569302'
 googleplusURL: 'https://www.google.com/maps/place/Steamatic/@44.9612066,-93.1853565,15z/data=!4m5!3m4!1s0x0:0xbfcf6ef1995fff17!8m2!3d44.9612066!4d-93.1853565'
 linkedinURL: 'https://www.linkedin.com/company/10545681'
@@ -10,3 +10,4 @@ twitterURL: 'https://twitter.com/SteamaticTC'
 youtubeURL: 'http://www.youtube.com/user/steamatic1'
 instagramURL:
 twitterhandle: '@steamatictc'
+multiplelocations: false
