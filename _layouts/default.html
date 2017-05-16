@@ -74,6 +74,7 @@
 							{% if site.twitterURL %}<li><a href="{{ site.twitterURL }}" class="si-twitter"><span class="ts-icon"><i class="icon-twitter"></i></span><span class="ts-text">Twitter</span></a></li>{% endif %}
 							{% if site.youtubeURL %}<li><a href="{{ site.youtubeURL }}" class="si-youtube"><span class="ts-icon"><i class="icon-youtube"></i></span><span class="ts-text">YouTube</span></a></li>{% endif %}
 							{% if site.instagramURL %}<li><a href="{{ site.instagramURL }}" class="si-instagram"><span class="ts-icon"><i class="icon-instagram2"></i></span><span class="ts-text">Instagram</span></a></li>{% endif %}
+							{% if site.linkedinURL %}<li><a href="{{ site.linkedinURL }}" class="si-linkedin"><span class="ts-icon"><i class="icon-linkedin"></i></span><span class="ts-text">Linked In</span></a></li>{% endif %}
 						</ul>
 					</div><!-- #top-social end -->
 
@@ -83,6 +84,7 @@
 
 					<!-- Top Links
 					============================================= -->
+					{% if site.multiplelocations %}
 					<div class="top-links">
 						<ul>
 							<li><a href="index.html">Locations</a>
@@ -96,6 +98,7 @@
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</div><!-- .top-links end -->
+					{% endif %}
 
 				</div>
 
