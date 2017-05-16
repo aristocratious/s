@@ -31,6 +31,24 @@
 	<!-- Document Title
 	============================================= -->
 	<title>{{ page.title }}</title>
+	
+	<!-- Meta tags -->
+	<meta name="description" content="{{ page.metadescription }}"/>
+    <meta name="robots" content="noodp"/>
+    <link rel="canonical" href="{{ site.url }}" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.metadescription }}" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:site_name" content="Steamatic Restoration &amp; Cleaning" />
+    <meta property="og:image" content="{{ page.featuredimg }}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="{{ page.metadescription }}" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:site" content="{{ site.twitterhandle }}" />
+    <meta name="twitter:image" content="{{ page.featuredimg }}" />
+    <meta name="twitter:creator" content="{{ site.twitterhandle }}" />
 
 </head>
 
