@@ -95,18 +95,18 @@ layout: default
 					<div class="fslider testimonial testimonial-full" data-arrows="false" style="z-index: 2;">
 						<div class="flexslider">
 							<div class="slider-wrap">
-								
+								{% for testimonial in site.Testimonials %}
 								<div class="slide">
 
 									<div class="testi-content">
-										<p>{{ testimonial.content }}</p>
+										<p>{{ testimonial.quote }}</p>
 										<div class="testi-meta">
 											{{ testimonial.title }}<br>
 											<a href="{{ testimonial.citeURL }}"><i>see source</i></a>
 										</div>
 									</div>
 								</div>
-							
+								{% endfor %}
 							</div>
 						</div>
 					</div>
