@@ -17,13 +17,13 @@ footerslogan: 'We’re committed to serving your every cleaning and restoration 
 
 
 collections:
-- Testimonials
-- RestorationServices
+  Testimonials
+  RestorationServices
     output: true
     permalink: /:name
-- CleaningServices
+  CleaningServices
     output: true
     permalink: /:name
-- AdditionalServices
+  AdditionalServices
     output: true
     permalink: /:name
