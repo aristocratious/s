@@ -227,9 +227,9 @@
                 </section>
         {% endif %}
         <!-- #page-title end -->
-        
+        {% if page.fullwidth != true %}
             <section id="content">
-    {% if page.fullwidth != true %}
+    
                 <div class="content-wrap">
     
                     <div class="container clearfix">
@@ -237,8 +237,18 @@
         
 		{{ content }}
 		{% if page.fullwidth != true %}
-		</div></div>	{% endif %}</section>
-	
+		</div></div></section>
+		{% endif %}
+		
+		{% if page.hidecta != true %}
+				<div class="promo promo-dark promo-full uppercase nobottommargin notopmargin ">
+					<div class="container clearfix">
+						<h3 style="letter-spacing: 2px;">Start Planning your New Dream Home with us</h3>
+						<span>We strive to provide Our Customers with Top Notch Support to make their Theme</span>
+						<a href="#" class="button button-large button-border button-rounded button-dark">Start Now</a>
+					</div>
+				</div>
+				{% endif %}
 			<!-- Footer
 		============================================= -->
 		<footer id="footer" class="dark">
