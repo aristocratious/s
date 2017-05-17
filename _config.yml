@@ -22,6 +22,9 @@ collections:
     RestorationServices:
         output: true
         permalink: /:name
+        defaults:
+            values:
+                layout: page
     CleaningServices:
         output: true
         permalink: /:name
