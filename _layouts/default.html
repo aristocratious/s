@@ -227,9 +227,9 @@
                 </section>
         {% endif %}
         <!-- #page-title end -->
-        {% if page.fullwidth != true %}
+        
             <section id="content">
-    
+    {% if page.fullwidth != true %}
                 <div class="content-wrap">
     
                     <div class="container clearfix">
@@ -237,8 +237,8 @@
         
 		{{ content }}
 		{% if page.fullwidth != true %}
-		</div></div></section>
-		{% endif %}
+		</div></div>	{% endif %}</section>
+	
 			<!-- Footer
 		============================================= -->
 		<footer id="footer" class="dark">
