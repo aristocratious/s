@@ -211,8 +211,8 @@
 		</header><!-- #header end -->
 		<!-- Page Title
 ============================================= -->
-        {% if hidetitlesection != true %}
-                <section id="page-title" class="page-title-parallax page-title-dark" style="background-image: url('images/gallery/7.jpg'); padding: 120px 0;" data-stellar-background-ratio="0.3">
+        {% if page.hidetitlesection != true %}
+                <section id="page-title" class="page-title-parallax page-title-dark" style="background-image: url('{% if page.img %}{{page.img}}{% else %}images/gallery/7.jpg{% endif %}'); padding: 120px 0;" data-stellar-background-ratio="0.3">
                 
                   <div class="container clearfix">
                     <h1>{{ page.title }}</h1>
@@ -227,10 +227,18 @@
                 </section>
         {% endif %}
         <!-- #page-title end -->
+        {% if page.fullwidth != true %}
+            <section id="content">
+    
+                <div class="content-wrap">
+    
+                    <div class="container clearfix">
+        {% endif %}
         
 		{{ content }}
-		
-		
+		{% if page.fullwidth != true %}
+		</div></div></section>
+		{% endif %}
 			<!-- Footer
 		============================================= -->
 		<footer id="footer" class="dark">
