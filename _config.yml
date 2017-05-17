@@ -18,4 +18,6 @@ footerslogan: 'We’re committed to serving your every cleaning and restoration 
 
 collections:
 - Testimonials
-- Services
+- RestorationServices
+- CleaningServices
+- AdditionalServices
