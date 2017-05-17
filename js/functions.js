@@ -2244,7 +2244,7 @@ var SEMICOLON = SEMICOLON || {};
 						easing: flexsEasing,
 						direction: flexsDirection,
 						reverse: flexsReverse,
-						slideshow: flexsSlideshow,
+						slideshow: false,
 						slideshowSpeed: Number(flexsPause),
 						animationSpeed: Number(flexsSpeed),
 						pauseOnHover: flexsHover,
