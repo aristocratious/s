@@ -95,36 +95,18 @@ layout: default
 					<div class="fslider testimonial testimonial-full" data-arrows="false" style="z-index: 2;">
 						<div class="flexslider">
 							<div class="slider-wrap">
+								{% for testimonial in site.Testimonials %}
 								<div class="slide">
 
 									<div class="testi-content">
-										<p>Similique fugit repellendus expedita excepturi iure provident quia eaque. Repellendus, vero numquam?</p>
+										<p>{{ testinomial.content }}</p>
 										<div class="testi-meta">
-											Steve Jobs
-											<span>Apple Inc.</span>
+											{{ testimonial.title }}
+											<a href="{{ testimonial.citeURL }}"><i>see source</i></a>
 										</div>
 									</div>
 								</div>
-								<div class="slide">
-
-									<div class="testi-content">
-										<p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
-										<div class="testi-meta">
-											Collis Ta'eed
-											<span>Envato Inc.</span>
-										</div>
-									</div>
-								</div>
-								<div class="slide">
-
-									<div class="testi-content">
-										<p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!</p>
-										<div class="testi-meta">
-											John Doe
-											<span>XYZ Inc.</span>
-										</div>
-									</div>
-								</div>
+								{% endfor %}
 							</div>
 						</div>
 					</div>
