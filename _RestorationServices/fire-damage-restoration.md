@@ -11,4 +11,4 @@ As pioneers in the cleaning industry, we use state-of-the-art machines and prove
 
 ## HIRE US FOR FIRE DAMAGE RESTORATION
 
-See how Steamatic can help you. We can work on homes throughout the Twin Cities, so give us a call today. We’ll take care of the fire damage so that you can move forward with your life.
+See how Steamatic can help you. We can work on homes throughout the {{ site.servingarea }}, so give us a call today. We’ll take care of the fire damage so that you can move forward with your life.
