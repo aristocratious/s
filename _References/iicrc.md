@@ -1,5 +1,5 @@
 ---
-url: 'https://www.angieslist.com/companylist/us/mn/saint-paul/steamatic-of-the-twin-cities-reviews-109901.htm'
-img: /images/clients/2.png
+url: 'http://www.iicrc.org/locate-a-certified-professional/#north-america'
+img: /images/clients/3.png
 title: IICRC
 ---
