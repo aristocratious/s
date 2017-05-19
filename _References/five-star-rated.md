@@ -1,5 +1,5 @@
 ---
-url: 'https://www.angieslist.com/companylist/us/mn/saint-paul/steamatic-of-the-twin-cities-reviews-109901.htm'
-img: /images/clients/2.png
+url: 'http://www.fivestarrated.com/minneapolis-st-paul/fire-water-damage-restoration/steamatic-of-the-twin-cities-fire-water-damage-restoration/'
+img: /images/clients/5.png
 title: Five Star Rated
 ---
