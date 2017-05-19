@@ -100,6 +100,8 @@ dl, dt, dd, ol, ul, li {
 	padding: 0;
 }
 
+#content li { margin-left:7px;}
+
 .clear {
 	clear: both;
 	display: block;
