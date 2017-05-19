@@ -162,7 +162,7 @@
 							<li><a href="#"><div>Restoration Services</div></a>
 								<ul>
 					                {% for service in site.RestorationServices %}
-									    <li><a href="{{ service.relative_path }}"><div>{{ service }}</div></a></li>
+									    <li><a href="{{ service.relative_path }}"><div>{{ service.name }}</div></a></li>
 									{% endfor %}
 								</ul>
 							</li>
