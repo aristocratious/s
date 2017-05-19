@@ -1,5 +1,5 @@
 ---
-url: 'https://www.angieslist.com/companylist/us/mn/saint-paul/steamatic-of-the-twin-cities-reviews-109901.htm'
-img: /images/clients/2.png
+url: 'https://nadca.com/find-a-professional/steamatic-twin-cities'
+img: /images/clients/4.png
 title: NADCA
 ---
