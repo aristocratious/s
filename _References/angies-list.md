@@ -1,5 +1,5 @@
 ---
-url: 'https://www.bbb.org/minnesota/business-reviews/air-duct-cleaning/steamatic-of-the-twin-cities-in-saint-paul-mn-24000731'
-img: /images/clients/1.png
-title: Angies List
+url: 'https://www.angieslist.com/companylist/us/mn/saint-paul/steamatic-of-the-twin-cities-reviews-109901.htm'
+img: '/images/clients/2.png'
+title: 'Angies List'
 ---
