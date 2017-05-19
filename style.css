@@ -327,7 +327,7 @@ span.middot {
 
 .header-stick { margin-top: -50px !important; }
 
-.content-wrap .header-stick { margin-top: -80px !important; }
+.content-wrap .header-stick { margin-top: -80px !important; background-color:inherit;}
 
 .footer-stick { margin-bottom: -50px !important; }
 
@@ -3516,6 +3516,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 .content-wrap {
 	position: relative;
 	padding: 80px 0;
+	background-color:inherit;
 }
 
 #content .container { position: relative; }
