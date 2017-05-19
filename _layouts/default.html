@@ -309,21 +309,24 @@
 
 						<div class="widget subscribe-widget clearfix">
 							<div class="row">
-
-								<div class="col-md-6 clearfix bottommargin-sm">
-									<a href="{{ facebookURL }}" class="social-icon si-dark si-colored si-facebook nobottommargin" style="margin-right: 10px;">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a href="{{ facebookURL }}"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
-								</div>
-								<div class="col-md-6 clearfix">
-									<a href="{{ googleplusURL }}" class="social-icon si-dark si-colored si-gplus nobottommargin" style="margin-right: 10px;">
-										<i class="icon-gplus"></i>
-										<i class="icon-gplus"></i>
-									</a>
-									<a href="{{ googleplusURL }}"><small style="display: block; margin-top: 3px;"><strong>Find us</strong><br>on Google+</small></a>
-								</div>
+                                {% if site.facebookURL %}
+    								<div class="col-md-6 clearfix bottommargin-sm">
+    									<a href="{{ site.facebookURL }}" class="social-icon si-dark si-colored si-facebook nobottommargin" style="margin-right: 10px;">
+    										<i class="icon-facebook"></i>
+    										<i class="icon-facebook"></i>
+    									</a>
+    									    <a href="{{ site.facebookURL }}"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
+    								</div>
+								{% endif %}
+								{% if site.googleplusURL %}
+    								<div class="col-md-6 clearfix">
+    									<a href="{{ site.googleplusURL }}" class="social-icon si-dark si-colored si-gplus nobottommargin" style="margin-right: 10px;">
+    										<i class="icon-gplus"></i>
+    										<i class="icon-gplus"></i>
+    									</a>
+    									<a href="{{ site.googleplusURL }}"><small style="display: block; margin-top: 3px;"><strong>Find us</strong><br>on Google+</small></a>
+    								</div>
+								{% endif %}
 
 							</div>
 						</div>
