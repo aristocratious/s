@@ -29,3 +29,5 @@ collections:
     AdditionalServices:
         output: true
         permalink: /:name
+    References:
+        output: false
