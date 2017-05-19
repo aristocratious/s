@@ -96,7 +96,7 @@
     								</ul>
     							</li>
 							{% endif %}
-							<li><a href="faqs.html">FAQs</a></li>
+							<li><a href="faqs.html">C.E.</a></li>
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</div><!-- .top-links end -->
@@ -168,27 +168,23 @@
 							</li>
 							<li><a href="#"><div>Cleaning Services</div></a>
 								<ul>
-									<li><a href="#"><div>Air Duct Cleaning</div></a></li>
-									<li><a href="#"><div>Air Duct Cleaning Request</div></a></li>
-									<li><a href="#"><div>Carpet Cleaning</div></a></li>
-									<li><a href="#"><div>Carpet Job Request</div></a></li>
-									<li><a href="#"><div>Crime Scene Cleaning</div></a></li>
-									<li><a href="#"><div>Dryer Vent Cleaning</div></a></li>
-									<li><a href="#"><div>Hard Surface Cleaning</div></a></li>
-									<li><a href="#"><div>Area Rug Cleaning</div></a></li>
-									<li><a href="#"><div>Upholstery Cleaning</div></a></li>
+									{% for service in site.CleaningServices %}
+									    <li><a href="{{ service.url }}"><div>{{ service.title }}</div></a></li>
+									{% endfor %}
 								</ul>
 							</li>
-							<li><a href="#"><div>Request Service</div></a>
+							{% if site.AdditionalServices.size > 0 %}
+							<li><a href="#"><div>Additional Services</div></a>
 								<ul>
-									<li><a href="#"><div>Fire / Water / Mold Job Request</div></a></li>
-									<li><a href="#"><div>Air Duct Cleaning Request</div></a></li>
-									<li><a href="#"><div>Carpet Job Request</div></a></li>
+									{% for service in site.AdditionalServices %}
+									    <li><a href="{{ service.url }}"><div>{{ service.title }}</div></a></li>
+									{% endfor %}
 								</ul>
 							</li>
+							{% endif %}
 							<li><a href="#"><div>Testimonials</div></a></li>
 							<li><a href="#"><div>Photos</div></a></li>
-							<li><a href="#"><div>C.E.</div></a></li>
+							
 
 						</ul>
 
