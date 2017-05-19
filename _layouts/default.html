@@ -159,12 +159,11 @@
 
 						<ul>
 							<li><a href="#"><div>Home</div></a></li>
-							<li class="current"><a href="#"><div>Restoration Services</div></a>
+							<li><a href="#"><div>Restoration Services</div></a>
 								<ul>
-									<li><a href="#"><div>Fire Damage Restoration</div></a></li>
-									<li><a href="#"><div>Mold Remediation</div></a></li>
-									<li><a href="#"><div>Water Damage / Home Flooding</div></a></li>
-									<li><a href="#"><div>Fire / Water / Mold Job Request</div></a></li>
+					                {% for service in site.RestorationServices %}
+									    <li><a href="{{ service.relative_path }}"><div>{{ service }}</div></a></li>
+									{% endfor %}
 								</ul>
 							</li>
 							<li><a href="#"><div>Cleaning Services</div></a>
