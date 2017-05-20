@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Fire Damage Restoration
+img: /images/services/fire.jpg
+excerpt: 'When disaster strikes, you just want to get your life back to normal.'
 ---
 
 
