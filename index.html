@@ -126,7 +126,7 @@ hidecta: true
 				{% assign count = 0 %}
                 {% for service in a_array %}
                 {% unless service.short == '' %}
-					{% if a_array.index(service) == 0 %}<h2 class="center ls1 bottommargin">Services provided in the {{ site.servingarea }}:</h2>{% endif %}
+					{% if count == 0 %}<h2 class="center ls1 bottommargin">Services provided in the {{ site.servingarea }}:</h2>{% endif %}
 					<div class="col_one_third bottommargin">
 						<div class="feature-box media-box">
 							<div class="fbox-media">
