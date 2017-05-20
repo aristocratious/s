@@ -141,7 +141,7 @@ hidecta: true
 					</div>
 					
 					{% endunless %}
-					{% assign i = i + 1 %}
+					{% assign i = i | plus: 1 %}
 					{% if i % 3 == 0 and i != 0 %}
 					</div><div class="container clearfix nobottommargin">
 					{% endif %}
