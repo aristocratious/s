@@ -123,10 +123,10 @@ hidecta: true
                 
 				<div class="container clearfix nobottommargin" >
 				{% assign a_array = site.RestorationServices + site.CleaningServices + site.AdditionalServices  %}
-				{% assign i = 0 %}
+				{% increment my_counter %}
                 {% for service in a_array %}
                 {% unless service.short == '' %}
-					{% if i == 0 %}<h2 class="center ls1 bottommargin">Services provided in the {{ site.servingarea }}:</h2>{% endif %}
+					{% if my_counter == 0 %}<h2 class="center ls1 bottommargin">Services provided in the {{ site.servingarea }}:</h2>{% endif %}
 					<div class="col_one_third bottommargin">
 						<div class="feature-box media-box">
 							<div class="fbox-media">
@@ -141,8 +141,8 @@ hidecta: true
 					</div>
 					
 					{% endunless %}
-					{% assign i = i + 1 %}
-					{% if i % 3 == 0 %}
+					{% increment my_counter %}
+					{% if my_counter % 3 == 0 %}
 					</div><div class="container clearfix nobottommargin">
 					{% endif %}
 					
