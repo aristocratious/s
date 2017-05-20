@@ -122,7 +122,7 @@ hidecta: true
 
                 
 				<div class="container clearfix nobottommargin" >
-				{% a_array = site.RestorationServices + site.CleaningServices + site.AdditionalServices  %}
+				{% assign a_array = site.RestorationServices + site.CleaningServices + site.AdditionalServices  %}
                 {% for service in a_array | service.excerpt != '' %}
 					{% if a_array.index(service) == 0 %}<h2 class="center ls1 bottommargin">Services provided in the {{ site.servingarea }}:</h2>{% endif %}
 					<div class="col_one_third bottommargin">
