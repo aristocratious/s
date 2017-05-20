@@ -142,8 +142,8 @@ hidecta: true
 					</div>
 					
 					{% endunless %}
-					
-					{% if i % 3 == 0 and i != 0 %}
+					{% assign m = i | modulo:3 %}
+					{% if m == 0 %}
 					</div><div class="container clearfix nobottommargin">
 					{% endif %}
 					
