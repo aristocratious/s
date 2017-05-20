@@ -139,11 +139,12 @@ hidecta: true
 							</div>
 						</div>
 					</div>
-					{% assign count = count + 1 %}
+					
 					{% endunless %}
 					{% if count % 3 == 0 and count != 0%}
 					</div><div class="container clearfix nobottommargin">
 					{% endif %}
+					{% assign count = count + 1 %}
 				{% endfor %}
 				</div>
 <!--
