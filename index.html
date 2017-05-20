@@ -123,7 +123,7 @@ hidecta: true
                 
 				<div class="container clearfix nobottommargin" >
 				{% assign a_array = site.RestorationServices + site.CleaningServices + site.AdditionalServices  %}
-				{% assign count = 1 %}
+				{% assign count = 0 %}
                 {% for service in a_array %}
                 {% unless service.short == '' %}
 					{% if a_array.index(service) == 0 %}<h2 class="center ls1 bottommargin">Services provided in the {{ site.servingarea }}:</h2>{% endif %}
@@ -141,10 +141,11 @@ hidecta: true
 					</div>
 					
 					{% endunless %}
-					{% if count % 3 == 0 and count != 0%}
+					{% assign count = count + 1 %}
+					{% if count % 3 == 0 %}
 					</div><div class="container clearfix nobottommargin">
 					{% endif %}
-					{% assign count = count + 1 %}
+					
 				{% endfor %}
 				</div>
 <!--
