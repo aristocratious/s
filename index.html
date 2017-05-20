@@ -120,23 +120,26 @@ hidecta: true
 
 				</div>
 
-
-
+                
 				<div class="container clearfix nobottommargin" >
-					<h2 class="center ls1 bottommargin">Services provided in the {{ site.servingarea }}:</h2>
+				{% a_array = site.RestorationServices + site.CleaningServices + site.AdditionalServices  %}
+                {% for service in a_array | service.excerpt != '' %}
+					{% if a_array.index(service) == 0 %}<h2 class="center ls1 bottommargin">Services provided in the {{ site.servingarea }}:</h2>{% endif %}
 					<div class="col_one_third bottommargin">
 						<div class="feature-box media-box">
 							<div class="fbox-media">
-								<img style="border-radius: 2px;" src="images/services/tile.jpg" alt="Tile and grout cleaning" class="editable">
+								<img style="border-radius: 2px;" src="{{ service.img }}" alt="{{ service.title }}" class="editable">
 							</div>
 							<div class="fbox-desc">
-								<h3 class="editable">Tile and Grout Cleaning<!--<span class="subtitle">We're here when you need us.</span>--></h3>
-								<p class="editable">Our professional technicians have perfected the art of tile and grout cleaning and take pride in making dirty, discolored tile and grout lines look brand new!</p>
-								<a href="#" class="button button-3d button-mini button-rounded button-light button-white editable" style="margin:10px 0px;">Read more</a>
+								<h3 class="editable">{{ service.title }}<!--<span class="subtitle">We're here when you need us.</span>--></h3>
+								<p class="editable">{{ service.excerpt }}</p>
+								<a href="{{ service.url }}" class="button button-3d button-mini button-rounded button-light button-white editable" style="margin:10px 0px;">Read more</a>
 							</div>
 						</div>
 					</div>
-
+				{% endif %}
+				</div>
+<!--
 					<div class="col_one_third bottommargin">
 						<div class="feature-box media-box">
 							<div class="fbox-media">
@@ -162,7 +165,7 @@ hidecta: true
 							</div>
 						</div>
 					</div>
-</div>
+</div>-->
 <div class="container clearfix bottommargin" >
 					<div class="col_one_third bottommargin">
 						<div class="feature-box media-box">
