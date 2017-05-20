@@ -129,7 +129,7 @@ hidecta: true
                 {% assign m = i | modulo:3 %}
                 {% unless service.short == '' %}
 					{% if i == 1 %}<h2 class="center ls1 bottommargin">Services provided in the {{ site.servingarea }}:</h2>{% endif %}
-					<div class="col_one_third bottommargin {% if m == 0 %}col-last{% endif %}">
+					<div class="col_one_third bottommargin {% if m == 0 %}col_last{% endif %}">
 						<div class="feature-box media-box">
 							<div class="fbox-media">
 								<img style="border-radius: 2px;" src="{{ service.img }}" alt="{{ service.title }}" class="editable">
