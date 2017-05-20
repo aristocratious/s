@@ -2,7 +2,7 @@
 layout: default
 title: Mold Remediation
 img: /images/services/fire.jpg
-excerpt: 
+excerpt: ''
 ---
 
 When moisture is present, molds can grow on virtually any substance and people are more susceptible to the health effects of microbial growth when it is contained in an indoor environment. Prompt attention to water damage or visible mold can often keep a minor problem from becoming major, and can help guard against health issues and property damage.
