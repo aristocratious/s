@@ -126,14 +126,14 @@ hidecta: true
 				{% assign i = 0 %}
                 {% for service in a_array %}
                 {% unless service.short == '' %}
-					{% if i == 0 %}<h2 class="center ls1 bottommargin">{{i}} Services provided in the {{ site.servingarea }}:</h2>{% endif %}
+					{% if i == 0 %}<h2 class="center ls1 bottommargin">Services provided in the {{ site.servingarea }}:</h2>{% endif %}
 					<div class="col_one_third bottommargin">
 						<div class="feature-box media-box">
 							<div class="fbox-media">
 								<img style="border-radius: 2px;" src="{{ service.img }}" alt="{{ service.title }}" class="editable">
 							</div>
 							<div class="fbox-desc">
-								<h3 class="editable">{{ service.title }}<span class="subtitle">{{ service.subtitle }}</span></h3>
+								<h3 class="editable">{{i}} {{ service.title }}<span class="subtitle">{{ service.subtitle }}</span></h3>
 								<p class="editable">{{ service.short }}</p>
 								<a href="{{ service.url }}" class="button button-3d button-mini button-rounded button-light button-white editable" style="margin:10px 0px;">Read more</a>
 							</div>
