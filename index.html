@@ -94,7 +94,7 @@ hidecta: true
 					</div>
 
 				<div class="section parallax dark" style="background-image: url('images/slider/3.jpg'); padding: 120px 0;" data-stellar-background-ratio="0.2" id="testimonials">
-
+                    <h2 class="center ls1 bottommargin">What Our Customers Say</h2>
 					<div class="fslider testimonial testimonial-full" data-arrows="false" style="z-index: 2;">
 						<div class="flexslider">
 							<div class="slider-wrap">
@@ -125,7 +125,7 @@ hidecta: true
     				{% assign a_array = site.RestorationServices | concat: site.CleaningServices | concat: site.AdditionalServices %}
     				{% assign i = 0 %}
                     {% for service in a_array %}
-                        {% if i == 0 %}<h2 class="center ls1 bottommargin">Services provided in the {{ site.servingarea }}:</h2>{% endif %}
+                        {% if i == 0 %}<h2 class="center ls1 bottommargin">Services Provided in the {{ site.servingarea }} Area:</h2>{% endif %}
         				{% unless service.short == '' %}
             				{% assign i = i | plus: 1 %}
                             {% assign m = i | modulo:3 %}
