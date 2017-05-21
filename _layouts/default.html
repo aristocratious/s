@@ -158,26 +158,26 @@
 						<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
 						<ul>
-							<li><a href="#"><div>Home</div></a></li>
-							<li><a href="#"><div>Restoration Services</div></a>
+							<li><a href="/"><div>Home</div></a></li>
+							<li><a><div>Restoration Services</div></a>
 								<ul>
 					                {% for service in site.RestorationServices %}
-									    <li><a href="{{ service.url }}"><div>{{ service.title }}</div></a></li>
+									    <li><a href="{{ service.url }}" title="{{ service.title }}"><div>{{ service.title }}</div></a></li>
 									{% endfor %}
 								</ul>
 							</li>
-							<li><a href="#"><div>Cleaning Services</div></a>
+							<li><a><div>Cleaning Services</div></a>
 								<ul>
 									{% for service in site.CleaningServices %}
-									    <li><a href="{{ service.url }}"><div>{{ service.title }}</div></a></li>
+									    <li><a href="{{ service.url }}" title="{{ service.title }}"><div>{{ service.title }}</div></a></li>
 									{% endfor %}
 								</ul>
 							</li>
 							{% if site.AdditionalServices.size > 0 %}
-							<li><a href="#"><div>Additional Services</div></a>
+							<li><a><div>Additional Services</div></a>
 								<ul>
 									{% for service in site.AdditionalServices %}
-									    <li><a href="{{ service.url }}"><div>{{ service.title }}</div></a></li>
+									    <li><a href="{{ service.url }}" title="{{ service.title }}"><div>{{ service.title }}</div></a></li>
 									{% endfor %}
 								</ul>
 							</li>
