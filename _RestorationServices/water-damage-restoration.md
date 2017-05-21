@@ -11,5 +11,6 @@ We offer immediate responses because we know how damaging sitting water can be. 
 * Have been delivering solutions since 1968
 * Offer restoration and cleaning services in one convenient place
 * Can handle water damage and mold remediation
+
 ## HIRE US FOR WATER DAMAGE RESTORATION
 Get your home cleaned from top to bottom and ensure that it’s safe from the threat of mold by investing in professional water damage services. We help property owners throughout {{ site.servingarea }}. Give us a call today to see how quickly Steamatic can get your place back in order.
