@@ -1,7 +1,7 @@
 =begin
   Jekyll filter to concatenate arrays
   Usage:
-    {% assign result = array-1 | concatArray: array-2 %}
+    {% assign result = array-1 | concat: array-2 %}
 =end
 module Jekyll
   module ConcatArrays
