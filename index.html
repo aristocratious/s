@@ -122,7 +122,8 @@ hidecta: true
 
                 
 				<div class="container clearfix nobottommargin" >
-				{% assign a_array = site.RestorationServices + site.CleaningServices + site.AdditionalServices  %}
+				{% assign a_array_old = site.RestorationServices + site.CleaningServices + site.AdditionalServices  %}
+				{% assign a_array = site.RestorationServices | concat: site.CleaningServices | concat: site.AdditionalServices %}
 				{% assign i = 0 %}
                 {% for service in a_array %}
                     {% assign i = i | plus: 1 %}
