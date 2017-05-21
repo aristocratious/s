@@ -13,5 +13,6 @@ Our certified {{site.servingcity}}-area technicians use the latest technology an
 * Save energy
 * Extend the life of your appliance
 
-##HIRE US FOR DRYER VENT CLEANING
+## HIRE US FOR DRYER VENT CLEANING
+
 We’re pioneers in many cleaning techniques, and we can assist you with restoration and cleaning services with just one call. Our professionals travel throughout the {{site.servingarea}} area, so call Steamatic today.
