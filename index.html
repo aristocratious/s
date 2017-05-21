@@ -122,107 +122,31 @@ hidecta: true
 
                 
 				<div class="container clearfix nobottommargin" >
-				{% assign a_array_old = site.RestorationServices + site.CleaningServices + site.AdditionalServices  %}
-				{% assign a_array = site.RestorationServices | concat: site.CleaningServices | concat: site.AdditionalServices %}
-				
-				{% assign i = 0 %}
-                {% for service in a_array %}
-                    
-                    
-    					{% if i == 0 %}<h2 class="center ls1 bottommargin">Services provided in the {{ site.servingarea }}:</h2>{% endif %}
-    				{% unless service.short == '' %}
-        				{% assign i = i | plus: 1 %}
-                        {% assign m = i | modulo:3 %}
-    					<div class="col_one_third bottommargin {% if m == 0 %}col_last{% endif %}">
-    						<div class="feature-box media-box">
-    							<div class="fbox-media">
-    								<img style="border-radius: 2px;" src="{{ service.img }}" alt="{{ service.title }}" class="editable">
-    							</div>
-    							<div class="fbox-desc">
-    								<h3 class="editable">{{ service.title }}<span class="subtitle">{{ service.subtitle }}</span></h3>
-    								<p class="editable">{{ service.short }}</p>
-    								<a href="{{ service.url }}" class="button button-3d button-mini button-rounded button-light button-white editable" style="margin:10px 0px;">Read more</a>
-    							</div>
-    						</div>
-    					</div>
-    				{% if m == 0 %}
-					</div><div class="container clearfix nobottommargin">
-					{% endif %}
-    				{% endunless %}
-					
-					
-					
-				{% endfor %}
+    				{% assign a_array = site.RestorationServices | concat: site.CleaningServices | concat: site.AdditionalServices %}
+    				{% assign i = 0 %}
+                    {% for service in a_array %}
+                        {% if i == 0 %}<h2 class="center ls1 bottommargin">Services provided in the {{ site.servingarea }}:</h2>{% endif %}
+        				{% unless service.short == '' %}
+            				{% assign i = i | plus: 1 %}
+                            {% assign m = i | modulo:3 %}
+        					<div class="col_one_third bottommargin {% if m == 0 %}col_last{% endif %}">
+        						<div class="feature-box media-box">
+        							<div class="fbox-media">
+        								<img style="border-radius: 2px;" src="{{ service.img }}" alt="{{ service.title }}" class="editable">
+        							</div>
+        							<div class="fbox-desc">
+        								<h3 class="editable">{{ service.title }}<span class="subtitle">{{ service.subtitle }}</span></h3>
+        								<p class="editable">{{ service.short }}</p>
+        								<a href="{{ service.url }}" class="button button-3d button-mini button-rounded button-light button-white editable" style="margin:10px 0px;">Read more</a>
+        							</div>
+        						</div>
+        					</div>
+            				{% if m == 0 %}
+        					</div><div class="container clearfix nobottommargin">
+        					{% endif %}
+        				{% endunless %}
+    				{% endfor %}
 				</div>
-<!--
-					<div class="col_one_third bottommargin">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img style="border-radius: 2px;" src="images/services/airduct.jpg" alt="Air Duct Cleaning">
-							</div>
-							<div class="fbox-desc">
-								<h3>Air Duct Cleaning</h3>
-								<p>Our technicians are fully trained and follow the NADCA air duct cleaning standards.</p>
-								<a href="#" class="button button-3d button-mini button-rounded button-light button-white" style="margin:10px 0px;">Read more</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col_one_third bottommargin col_last">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img style="border-radius: 2px;" src="images/services/fire.jpg" alt="Fire Smoke Damage Restoration">
-							</div>
-							<div class="fbox-desc">
-								<h3>Fire &amp; Smoke Damage Restoration</h3>
-								<p>When disaster strikes, you just want to get your life back to normal.</p>
-								<a href="#" class="button button-3d button-mini button-rounded button-light button-white" style="margin:10px 0px;">Read more</a>
-							</div>
-						</div>
-					</div>
-</div>
-<div class="container clearfix bottommargin" >
-					<div class="col_one_third bottommargin">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img style="border-radius: 2px;" src="images/services/carpet.jpg" alt="Carpet Cleaning">
-							</div>
-							<div class="fbox-desc">
-								<h3>Carpet Cleaning<span class="subtitle">We're here when you need us.</span></h3>
-								<p>Steamatic keeps homes and businesses at their cleanest and healthiest.</p>
-								<a href="#" class="button button-3d button-mini button-rounded button-light button-white" style="margin:10px 0px;">Read more</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col_one_third bottommargin">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img style="border-radius: 2px;" src="images/services/water.jpg" alt="Water Damage Restoration">
-							</div>
-							<div class="fbox-desc">
-								<h3>Water Damage Restoration</h3>
-								<p>Whether it’s caused by a weather emergency or a plumbing malfunction, water intrusion causes damage quickly.</p>
-								<a href="#" class="button button-3d button-mini button-rounded button-light button-white" style="margin:10px 0px;">Read more</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col_one_third bottommargin col_last">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img style="border-radius: 2px;" src="images/services/upholstery.jpg" alt="Upholstery Cleaning">
-							</div>
-							<div class="fbox-desc">
-								<h3>Upholstery Cleaning</h3>
-								<p>Pull out the dirt hiding in your furniture with Upholstery Cleaning.</p>
-								<a href="#" class="button button-3d button-mini button-rounded button-light button-white" style="margin:10px 0px;">Read more</a>
-							</div>
-						</div>
-					</div>
-
-				</div>-->
-
 
 
 
