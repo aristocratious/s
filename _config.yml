@@ -23,6 +23,12 @@ collections:
     RestorationServices:
         output: true
         permalink: /:name
+        defaults:
+            values:
+                layout: default
+                title: Fire Damage Restoration
+                img: /images/services/fire.jpg
+                short: 'When disaster strikes, you just want to get your life back to normal.'
     CleaningServices:
         output: true
         permalink: /:name
@@ -35,5 +41,11 @@ collections:
     AdditionalServices:
         output: true
         permalink: /:name
+        defaults:
+            values:
+                layout: default
+                title: Fire Damage Restoration
+                img: /images/services/fire.jpg
+                short: 'When disaster strikes, you just want to get your life back to normal.'
     References:
         output: false
