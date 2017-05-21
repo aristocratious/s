@@ -144,7 +144,8 @@ hidecta: true
     							</div>
     						</div>
     					</div>
-    					
+    				{% else %}
+    				{% assign i = i | minus: 1 %}
     				{% endif %}
 					
 					{% if m == 0 %}
