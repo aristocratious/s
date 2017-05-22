@@ -9,7 +9,7 @@ hidecta: true
 
 			<div class="swiper-container swiper-parent">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide" style="background-image: url('images/slider/3.jpg'); background-position: center top;">
+					<div class="swiper-slide" style="background-image: url('images/slider/generic.jpg'); background-position: center top;">
 						<div class="container clearfix">
 							<div class="slider-caption">
 								<h2 class="editable">Residential &amp; Commercial Cleaning Services</h2>
@@ -17,7 +17,15 @@ hidecta: true
 							</div>
 						</div>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide" style="background-image: url('images/slider/fire.jpg'); background-position: center top;">
+						<div class="container clearfix">
+							<div class="slider-caption">
+								<h2 class="editable">Fire &amp; Smoke Damage Restoration</h2>
+								<p class="editable">When disaster strikes, you just want to get your life back to normal. Count on Steamatic to streamline your recovery process.</p>
+							</div>
+						</div>
+					</div>
+					<!--<div class="swiper-slide">
 						<div class="container clearfix">
 							<div class="slider-caption slider-caption-right">
 								<h2 class="editable">Fire &amp; Smoke Damage Restoration</h2>
@@ -31,8 +39,8 @@ hidecta: true
 							</video>
 							<div class="video-overlay" style="background-color: rgba(0,0,0,0.1);"></div>
 						</div>
-					</div>
-					<div class="swiper-slide" style="background-image: url('images/slider/3.jpg'); background-position: center bottom;">
+					</div>-->
+					<div class="swiper-slide" style="background-image: url('images/slider/water.jpg'); background-position: center bottom;">
 						<div class="container clearfix">
 							<div  class="slider-caption">
 								<h2 class="editable">Water Damage Restoration</h2>
@@ -94,9 +102,8 @@ hidecta: true
 					</div>
 
 				<div class="section parallax dark" style="background-image: url('images/slider/3.jpg'); padding: 120px 0;" data-stellar-background-ratio="0.2" id="testimonials">
-                    
+
 					<div class="fslider testimonial testimonial-full" data-arrows="false" style="z-index: 2;">
-						<h2 class="center ls1 bottommargin light" style="z-index: 2;">What Our Customers Say</h2>
 						<div class="flexslider">
 							<div class="slider-wrap">
 								{% for testimonial in site.Testimonials %}
@@ -126,7 +133,7 @@ hidecta: true
     				{% assign a_array = site.RestorationServices | concat: site.CleaningServices | concat: site.AdditionalServices %}
     				{% assign i = 0 %}
                     {% for service in a_array %}
-                        {% if i == 0 %}<h2 class="center ls1 bottommargin">Services Provided in the {{ site.servingarea }} Area:</h2>{% endif %}
+                        {% if i == 0 %}<h2 class="center ls1 bottommargin">Services provided in the {{ site.servingarea }}:</h2>{% endif %}
         				{% unless service.short == '' %}
             				{% assign i = i | plus: 1 %}
                             {% assign m = i | modulo:3 %}
