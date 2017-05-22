@@ -2,6 +2,7 @@
 layout: default
 title: Upholstery Cleaning
 img: /images/services/upholstery.jpg
+hero: /images/slider/upholstery.jpg
 short: 'Pull out the dirt hiding in your furniture with Upholstery Cleaning.'
 ---
 Next to your carpets, your furniture gets the toughest workout. Ground-in dirt, spills, odors, and dust can make the upholstery look dull and aged.
