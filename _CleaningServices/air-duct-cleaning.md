@@ -2,6 +2,7 @@
 layout: default
 title: Air Duct Cleaning
 img: /images/services/airduct.jpg
+hero: /images/slider/airduct.jpg
 short: 'Our technicians are fully trained and follow the NADCA air duct cleaning standards.'
 ---
 The everyday health of your home starts in your air ducts. The same dirt, pollen and contaminants deposited in your carpet can also be collected and distributed by your home’s HVAC system. Removing these health hazards at the source can improve your family’s health and increase the efficiency of your system.  This saves you money and maintenance.
