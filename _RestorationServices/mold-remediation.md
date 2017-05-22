@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Mold Remediation
-img: /images/services/fire.jpg
+img: ''
+hero: /images/slider/mold.jpg
 short: 'Trust Steamatic to provide a comprehensive solution to any mold issues.'
 ---
 
