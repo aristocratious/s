@@ -19,15 +19,24 @@ hidecta: true
 							</div>
 						</div>
 					</div>
-					<div class="swiper-slide" style="background-image: url('images/slider/fire.jpg'); background-position: center top;">
-						<div class="container clearfix">
-							<div class="slider-caption">
-								<h2 class="editable">Fire &amp; Smoke Damage Restoration</h2>
-								<p class="editable">When disaster strikes, you just want to get your life back to normal. Count on Steamatic to streamline your recovery process.</p>
-								<a href="/fire-damage-restoration" class="button button-3d button-mini button-rounded button-light button-white editable" style="margin:10px 0px;" data-cms-source="/index.html" data-cms-index="18">Read more</a>
-							</div>
-						</div>
-					</div>
+					
+					{% assign a_array = site.RestorationServices | concat: site.CleaningServices | concat: site.AdditionalServices %}
+                    {% for service in a_array %}
+        				{% if service.hero %}
+        				<div class="swiper-slide" style="background-image: url('{{ service.hero }}'); background-position: center top;">
+    						<div class="container clearfix">
+    							<div class="slider-caption">
+    								<h2 class="editable">{{ service.title }}</h2>
+    								<p class="editable">{{ service.short }}</p>
+    								<a href="{{ service.url }}" class="button button-3d button-mini button-rounded button-dark" style="margin:10px 0px;">Read more</a>
+    							</div>
+    						</div>
+					    </div>
+        				{% endif %}
+    				{% endfor %}
+    				
+    				
+					
 					<!--<div class="swiper-slide">
 						<div class="container clearfix">
 							<div class="slider-caption slider-caption-right">
