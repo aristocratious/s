@@ -2,6 +2,7 @@
 layout: default
 title: Water Damage Restoration
 img: /images/services/water.jpg
+hero: /images/slider/water.jpg
 short: 'Whether it’s caused by a weather emergency or a plumbing malfunction, water intrusion causes damage quickly.'
 ---
 When you go through a flood, turn to a professional water damage service for assistance with the cleanup. Here in {{ site.servingcity }}, people count on Steamatic because we’re industry pioneers with access to state-of-the-art technology and powerful machines. We work on commercial and residential properties, and we’re trusted by insurance companies, property managers, and homeowners.
