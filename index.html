@@ -146,7 +146,7 @@ hidecta: true
     				{% assign i = 0 %}
                     {% for service in a_array %}
                         {% if i == 0 %}<h2 class="center ls1 bottommargin">Services provided in the {{ site.servingarea }}:</h2>{% endif %}
-        				{% unless service.short == '' %}
+        				{% unless service.short == '' or service.img == "" %}
             				{% assign i = i | plus: 1 %}
                             {% assign m = i | modulo:3 %}
         					<div class="col_one_third bottommargin {% if m == 0 %}col_last{% endif %}">
