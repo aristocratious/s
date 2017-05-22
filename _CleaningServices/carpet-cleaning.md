@@ -2,6 +2,7 @@
 layout: default
 title: Carpet Cleaning
 img: /images/services/carpet.jpg
+hero: /images/slider/carpet.jpg
 short: Steamatic keeps homes and businesses at their cleanest and healthiest.
 ---
 When you want your home to look its best, see how you might benefit from carpet cleaning services. We believe in providing people with effective treatments, friendly support, and competitive rates. We know that a healthy home starts with the healthy environment, so we’ll take care of the dirt that’s been tracked in and embedded into your carpeting.
